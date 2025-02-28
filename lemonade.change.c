@@ -2,12 +2,10 @@ bool lemonadeChange(int* bills, int billsSize) {
 
     int i,j,k,c5=0,c10=0,c20=0;
 
- 
       for(i=0;i<billsSize;i++){
 
         if(bills[i]==5){
-
-            c5++;
+           c5++;
         }
 
         else if(bills[i]==10){
@@ -15,12 +13,11 @@ bool lemonadeChange(int* bills, int billsSize) {
             c10++;
             c5--;
             
-             if(c5<0){
-
+        if(c5<0){
+		
         return false;
-    }
-
-
+        }
+		
         }
         else if(bills[i]==20){
             c20++;
@@ -36,10 +33,9 @@ bool lemonadeChange(int* bills, int billsSize) {
              if(c5<0 || c10<0){
 
         return false;
-    }
-
-        }
-    }
+     }
+   }
+ }
      
     
     
