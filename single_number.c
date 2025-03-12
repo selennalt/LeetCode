@@ -1,7 +1,6 @@
 int singleNumber(int* nums, int numsSize) {
 
-    int i,j;
-    int temp;
+    int i,j,temp;
 
     for(i=0;i<numsSize;i++){
 
